@@ -1,11 +1,5 @@
 // there are some error due to the naming of index instead of TourList 
 
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'; 
-
-
-
 import React, { Component } from 'react';
 import './tourlist.scss'; // scss
 import Tour from '../tour'; // Tour file is directed to Tour.js file via package.json
@@ -17,10 +11,14 @@ export default class TourList extends Component {
   }
 
   removeTour = id => {
-    console.log(id);
+    // console.log(id);
+    const remainingTours = this.state.tours.filter((item)=>(item.id !== id))
+    // this.state.tours.filter((item)=>{item !=== item})
+    this.setState({
+      tours : remainingTours
+    });
   }
 
-  
   render() {
     // console.log(this.state.tourdata);
     const {tours} = this.state;
