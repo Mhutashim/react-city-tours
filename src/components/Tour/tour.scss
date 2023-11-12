@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.tour{
+  img{ // allowed in scss
+    width: 100%;
+    display: block;
+    min-height: 13rem;
+  }
+}
+
+.city{
+  text-transform: capitalize;
+}
+.tour-name{
+  text-transform: capitalize;
+}

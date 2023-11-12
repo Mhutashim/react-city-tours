@@ -1,6 +1,6 @@
 import './App.scss';
 import Navbar from './components/navbar/Navbar';
-import TourList from './components/TourList'; // TourList has an index file
+import TourList from './components/tourlist'; // TourList has an index file
   
 
 /* ✅
