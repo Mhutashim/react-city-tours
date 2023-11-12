@@ -1,5 +1,7 @@
 import './App.scss';
 import Navbar from './components/navbar/Navbar';
+import TourList from './components/TourList'; // TourList has an index file
+  
 
 /* ✅
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,6 +42,7 @@ function App() {
       {/* </div> */}
       
       <Navbar></Navbar>
+      <TourList></TourList>
 
 
     </div>
