@@ -28,12 +28,12 @@ export default class tour extends Component {
       <article className='tour'>
         <div className="img-container">
           <img src={img} alt={city} />
-          <button type="button" onClick={()=>(removeTour(id))}>
-            <span className='close-btn'>
+          
+            <span className='close-btn' onClick={()=>(removeTour(id))}>
               <FontAwesomeIcon icon={icon({name:'rectangle-xmark', style:'regular' })} />
               {/* <FontAwesomeIcon icon={regular("rectangle-xmark")} /> */}
             </span>
-          </button>
+          
         </div>
         <div className="tour-info">
           <h3>{city}</h3>
@@ -41,11 +41,11 @@ export default class tour extends Component {
           {/* Toggle info */}
           <h5>
             info {" "}
-            <button type='button' onClick={()=>(this.toggleInfo(id))}>
-              <span>
+            
+              <span onClick={()=>(this.toggleInfo(id))}>
                 <FontAwesomeIcon icon={icon({name:'circle-down', style:'regular' })} />
               </span>
-            </button>
+
           </h5>
           {/* conditional render using  && operator */}
           {this.state.showinfo && (<p>{info}</p>)}

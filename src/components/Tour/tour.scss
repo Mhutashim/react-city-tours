@@ -56,8 +56,15 @@
   }
   h5 span{
     color: $mainGreen;
-    margin: .5rem;
-    font-size: 1.2rem;
+    margin: .9rem .3rem 0 .3rem ;
+    font-size: 1rem;
     cursor: pointer;
+  }
+  h5 span:hover{
+    // font-size: 1.4rem;
+    // margin: 2rem 0 0 0;
+  }
+  p{
+    font-size: small; // .9rem
   }
 }
